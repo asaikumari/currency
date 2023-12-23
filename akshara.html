@@ -1,0 +1,28 @@
+<html>
+<script type="text/javascript">
+function register(){
+var uname=document.getElementById("un").value;
+var pword=document.getElementById("pw").value;
+if(uname=="")
+{
+alert("enter your name");
+}
+let len=pword.length;
+if(len<6){
+alert("password must be greater than 6");
+}
+if(uname==="vijay" && pword==="sai1234")
+{
+alert("your a valid user");
+}
+else
+{
+alert("try again");
+}}
+</script>
+<form>
+Enter Name:<input type="text" id="un"/><br/>
+Enter Password:<input type="password" id="pw"/><br/>
+<input type="button" value="check" Onclick="register()"/>
+</form>
+</html>  
